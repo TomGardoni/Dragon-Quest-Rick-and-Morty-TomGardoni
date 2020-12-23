@@ -1,0 +1,119 @@
+
+.a{
+  color: #FFFFFF;
+  font-family:Courier New, monospace;
+  font-size: 20px;
+  text-align: center;
+  flex-flow: column wrap;
+  font-weight: normal;
+}
+.paladin{
+	color:#f6ec02;
+	font-family: Blippo, fantasy;
+	font-size: 20px;
+	text-align: center;
+	flex-flow: column wrap;
+}
+.mage{
+	color:#7407CD;
+	font-family: Blippo, fantasy;
+	font-size: 20px;
+	text-align: center;
+	flex-flow: column wrap;
+}
+
+.guerrier{
+	color:#18bf12;
+	font-family: Blippo, fantasy;
+	font-size: 20px;
+	text-align: center;
+	flex-flow: column wrap;
+}
+
+.robot{
+	color:#a5a8b6;
+	font-family: Blippo, fantasy;
+	font-size: 20px;
+	text-align: center;
+	flex-flow: column wrap;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+#cible{
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+}
+
+body{
+background-image: url("https://vignette.wikia.nocookie.net/rick-et-morty/images/4/41/Rick-and-Morty-2x05.png/revision/latest?cb=20170802150820&path-prefix=fr")
+}
+
+.stats{
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+ 
+}
+.personnage{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px ;
+  border:10px ridge rgba(100, 100, 100, .6);
+  background-color: #85893f;
+  height: 180px;
+  width: 110px;
+}
+.compétence{
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+}
+
+.habitude{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px ;
+  border:10px ridge rgba(100, 100, 100, .6);
+  background-color: #85893f;
+  height: 180px;
+  width: 110px;
+}
+
+#mechant{
+display: flex;
+margin: 50px;
+flex-direction: row;
+justify-content:space-evenly;
+align-items:center;
+}
+#boss{
+	visibility: visible;
+}
+#goule1{
+	visibility: visible;
+}
+#goule2{
+	visibility: visible;
+}
+.statsmonstre{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 8px ridge rgba(100, 0, 0, .3);
+  background-color: #85893f;
+  height: 180px;
+  width: 110px;
+}
+
+.infobulle{
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+visibility: hidden;
+}

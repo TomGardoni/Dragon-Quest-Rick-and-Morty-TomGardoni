@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.dragon.css">
+<script type="text/javascript" src="JSS.dragon.js"></script>
+</head>
+<body>
+
+
+<section class="stats">
+
+	
+
+	<section class="personnage" id=joueur1>
+	  <div class="a">--Rôle:--</div>
+	  <div class="paladin">Soigneur </div>
+	  <div class="a">---------</div>
+	  <div class="a"><span class="bold" id="pvpaladin">100</span> PV</div>
+	  <div class="a"><span class="bold" id="defpaladin">30</span> Def</div>
+	  <div class="a"><span class="bold" id="manapaladin">70</span> Mana</div>
+	</section>
+	
+
+	<section class="personnage" id=joueur2>
+	  <div class="a">--Rôle:--</div>
+	  <div class="mage"> Scientifique</div>
+	  <div class="a">---------</div>
+	  <div class="a"><span class="pv">90</span> PV</div>
+	  <div class="a"><span class="bold" id="defmage">10</span> Déf</div>
+	  <div class="a"><span class="mana">150</span> Mana</div>
+	</section>
+	
+
+	<section class="personnage" id=joueur3>
+	  <div class="a">--Rôle:--</div>
+	  <div class="guerrier">Barbar</div>
+	  <div class="a">---------</div>
+	  <div class="a"><span class="pv">130</span> PV</div>
+	  <div class="a"><span class="bold" id="defguerrier">35</span> Déf</div>
+	  <div class="a"><span class="mana">50</span> Mana</div>
+	</section>
+	
+
+	<section class="personnage" id=joueur4>
+	  <div class="a">--Rôle:--</div>
+	  <div class="robot">Robot</div>
+	  <div class="a">---------</div>
+	  <div class="a"><span class="pv">150</span> PV</div>
+	  <div class="a"><span class="bold" id="defrobot">20</strong> Déf</div>
+	  <div class="a"><span class="mana">20</span> Mana</div>
+	</section>
+</section>
+
+
+	<section id="cible">
+      <div class="a"><input class="favorite styled" id="attaquePaladin" type="button" value="Goule1"></div>
+	  <div class="a">
+	  	<input class="favorite styled" id="defensePaladin"type="button" value="Boss"></div>
+	  <div class="a"><input class="favorite styled" id="soins" type="button" value="Goule2"></div>
+	</section>
+
+
+<section id="mechant">
+	
+	<div class="monstre" id="goule1">
+	<img style="margin: auto;" src="https://static.wikia.nocookie.net/rickandmorty/images/4/41/Pickle_rick_transparent_edgetrimmed.png/revision/latest?cb=20200324115455" height="200px" width="200px">
+	</div>
+	
+	<div class="monstre" id="Boss">
+	<img style="margin: auto;" src="https://lh3.googleusercontent.com/proxy/77V_bQSBAVM3vlFavqs8Z8mSr7NO_QCp7Pd9OqTbtDroA1PsB0xG2p_tZ1shlKu_WcS-ib3Fz4rylCFUJ_uqADWbPngv8m7G9i0bN8z5LnuE73i-Ng" height="350px" width="300px">
+	</div>
+	
+	<div class="monstre" id="goule2">
+	<img style="margin: auto;" src="https://static.wikia.nocookie.net/rickandmorty/images/4/41/Pickle_rick_transparent_edgetrimmed.png/revision/latest?cb=20200324115455" height="200px" width="200px">
+	<div>
+</section>
+
+
+<section class="infobulle">
+	<div class="statsmonstre" id="statsgoule1">
+	  <div class="a"><strong>Pickle Rick</strong></div>
+	  <div class="a">---------</div>
+	  <div class="a"><span id="pvGoule1">100</span> PV</div>
+	  <div class="a">15 ATQ</div>
+	</div>
+	<div class="statsmonstre" id="statsboss">
+	  <div class="a"><strong>Rick</strong></div>
+	  <div class="a">---------</div>
+	  <div class="a"><span id="pvBoss">150</span>&nbsp;PV</div>
+	  <div class="a">20 ATQ</div>
+	</div>
+	<div class="statsmonstre" id="statsgoule2">
+	  <div class="a"><strong>Pickle Rick</strong></div>
+	  <div class="a">---------</div>
+	  <div class="a"><span id="pvGoule2">100</span> PV</div>
+	  <div class="a">15 ATQ</div>
+	</div>
+</section>
+
+
+
+<section class="compétence">
+	<section class="habitude">
+	  <div class="a"><img style="margin: auto;"></div>
+	  <div class="a">---------</div>
+	  <div class="paladin">Rick</div>
+	  <div class="a">---------</div>
+	  <div class="a">
+	  	<input class="favorite styled" id="attaquePaladin" type="button" value="Attaque" onclick="attack()"></div>s
+	  <div class="a"><input class="favorite styled" id="defensePaladin"type="button" value="Défense"></div>
+	  <div class="a"><input class="favorite styled" id="soins" type="button" value="Soins"></div>
+	</section>
+	<section class="habitude">
+	  <div class="a"><img style="margin: auto;"></div>
+	  <div class="a">---------</div>
+	  <div class="mage">Sancho</div>
+	  <div class="a">---------</div>
+	  <div class="a">Attaque</div>
+	  <div class="a">Défense</div>
+	  <div class="a">Magie</div>
+	</section>
+	<section class="habitude">
+	  <div class="a"><img style="margin: auto;"></div>
+	  <div class="a">---------</div>
+	  <div class="guerrier">Morty</div>
+	  <div class="a">---------</div>
+	  <div class="a">Attaque</div>
+	  <div class="a">Défense</div>
+	  <div class="a">Rage</div>
+	</section>
+	<section class="habitude">
+	  <div class="a"><img style="margin: auto;"></div>
+	  <div class="a">---------</div>
+	  <div class="robot">Jerry</div>
+	  <div class="a">---------</div>
+	  <div class="a">Attaque</div>
+	  <div class="a">Défense</div>
+	  <div class="a">Poison</div>
+	</section>
+
+</section>
+
+
+
+<script type="text/javascript" src="JSS.dragon.js"></script>
+</body>
